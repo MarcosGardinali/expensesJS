@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="pt-br">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Despesas Pessoais</title>
+</head>
+<body>
+	<header>
+		<div>
+			<img src="images/despesas.png" alt="Imagem de despesas" id="imagem-titulo">
+			<h1 id="titulo-pagina">Despesas Pessoais</h1>
+		</div>	
+		<p id="titulo-total">Total: <span id="calc-cifrao">R$ <span id="calc-total"></span></span></p>
+	</header>
+	<main>
+		<section class="conteudo">
+			<section class="carteira">
+				<img src="images/despesa-gasto.png" alt="Imagem de despesas" id="imagem-despesa">
+				<form class="form-despesas" id="form-despesas">
+					<label for="input-despesa" class="titulo-despesa">Nome:</label>
+  					<input type="text" id="input-despesa" name="titulo-despesa" placeholder="Titulo da Despesa" required>
+  					<label for="input-valor" class="titulo-valor">Valor:</label>
+  					<input type="number" step="0.01" id="input-valor" name="valor-despesa" placeholder="Valor da Despesa" required>	
+  					<button class="botao-salvar" id="botao-salvar">Salvar</button>
+				</form>
+			</section>
+			<section class="despesas">
+				<h2 class="titulo-lista-despesas">Despesas</h2>
+				<hr>
+				<ul id="lista-de-despesas" class="lista-de-despesas">
+				</ul>
+			</section>
+		</section>
+	<script src="js/main.js"></script>	
+	<script src="js/criaTotal.js"></script>	
+	<script src="js/criaDespesa.js"></script>	
+	</main>
+	<footer>
+		<img src="images/rodape.png" alt="Imagem despesa rodapé">
+	</footer>
+</body>
+</html>
