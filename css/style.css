@@ -5,9 +5,10 @@
 	--cor-secundaria: #F7F7F7;
 	--cor-de-fundo: #393E46;
 	--cor-de-fundo-cabecalho: #6D9886;
-	--cor-total: #222831;
+	--cor-total: #9DC08B;
 	--font-quicksand: 'Quicksand', sans-serif;
 	--gradient-branco-preto: linear-gradient(white, black);
+	--cor-conteudo: #222831;
 }
 
 body{
@@ -61,7 +62,7 @@ header div{
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 3rem;
-	background: var(--cor-primaria);
+	background: var(--cor-conteudo);
 	border: 1px solid transparent;
 	border-radius: 15px;
 	margin: 1.5rem 4.5rem;
