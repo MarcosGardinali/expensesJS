@@ -5,6 +5,7 @@ const despesas = JSON.parse(localStorage.getItem("despesas"))||[];
 const lista = document.getElementById("lista-de-despesas");
 document.getElementById("calc-total").innerHTML = total;
 
+console.log("...1")
 
 //forEach que percorre os itens do array que está na localStorage e os passa para a função cria elemento, que os cria na página
 despesas.forEach( (elemento) => {
@@ -43,7 +44,7 @@ form.addEventListener("submit", function(evento){
 lista.addEventListener("dblclick", function(evento, despesa){
 	let alvo = event.target;
 
-	alvo.deletaElemento(this.parentNode, despesa.id.value, despesa.valor);
+	alvo.deletaElemento(this.parentNode, despesa.id.textContent, despesa.valor);
 });
 
 
