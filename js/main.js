@@ -43,9 +43,10 @@ form.addEventListener("submit", function(evento){
 
 lista.addEventListener("dblclick", function(evento, despesa){
 	let alvo = event.target;
+	const despesaId = despesa.id.textContent
 
-	alvo.deletaElemento(this.parentNode, despesa.id.textContent, despesa.valor);
-	console.log(despesa.id.textContent);
+	alvo.deletaElemento(this.parentNode, despesaId, despesa.valor);
+	console.log(despesaId);
 });
 
 
