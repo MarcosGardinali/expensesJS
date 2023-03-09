@@ -33,9 +33,6 @@ form.addEventListener("submit", function(evento){
 		criaDespesa(despesa_Atual);
 	}
 
-	//Passando o objeto despesa atual para a lista
-	despesas.push(despesa_Atual);
-
 	localStorage.setItem("despesas", JSON.stringify(despesas));
 
 	form.reset();
