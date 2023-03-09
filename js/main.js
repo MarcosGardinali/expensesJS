@@ -41,11 +41,12 @@ form.addEventListener("submit", function(evento){
 	cria_total(valor);
 });
 
-lista.addEventListener("dblclick", function(evento, despesa, despesa_Atual){
+lista.addEventListener("dblclick", function(evento, despesa){
 	let alvo = event.target;
+	const despesaId = despesa
 
-	alvo.deletaElemento(this.parentNode, despesa_Atual.id, despesa.valor);
-	console.log(despesa_Atual.id);
+	alvo.deletaElemento(this.parentNode, despesa.id, despesa.valor);
+	console.log(despesa.id);
 });
 
 
