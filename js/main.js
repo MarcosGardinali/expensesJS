@@ -22,12 +22,13 @@ form.addEventListener("submit", function(evento){
 	const despesa_Atual = {
 		"nome": nome,
 		"valor": valor,
+		"id": despesas.length,
 	}
 
 	if(existe){
-		despesa_Atual.id = despesa.id
+		despesa_Atual.id = despesa.id;
 	}else{
-		despesa_Atual.id = despesas.length
+		//despesa_Atual.id = despesas.length; --Comentado para testar
 		//Passando o objeto despesa atual para a lista
 		despesas.push(despesa_Atual);
 
@@ -44,8 +45,8 @@ form.addEventListener("submit", function(evento){
 lista.addEventListener("dblclick", function(evento, despesa){
 	let alvo = event.target;
 
-	alvo.deletaElemento(this.parentNode, despesa.id, despesa.valor);
-	console.log(despesa.id);
+	alvo.deletaElemento(this.parentNode, despesas.id, despesa.valor);
+	console.log(despesas.id);
 });
 
 
