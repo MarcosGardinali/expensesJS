@@ -45,7 +45,7 @@ lista.addEventListener("dblclick", function(evento, despesa){
 	let alvo = event.target;
 
 	alvo.deletaElemento(this.parentNode, despesa.id.textContent, despesa.valor);
-	console.log(despesas.id.textContent);
+	console.log(despesa.id.textContent);
 });
 
 
